@@ -12,7 +12,8 @@
     "db:migrate": "npx drizzle-kit migrate",
     "db:studio": "npx drizzle-kit studio --verbose",
     "format": "npx prettier . --write",
-    "format:check": "npx prettier . --check"
+    "format:check": "npx prettier . --check",
+    "vercel-build": "npx drizzle-kit migrate && next build"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
