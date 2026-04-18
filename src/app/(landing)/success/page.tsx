@@ -47,18 +47,21 @@ export default async function SuccessPage({
       <div className="px-6 py-10">
         <section className="mx-auto prose dark:prose-invert">
           <BadgeCheckIcon className="mx-auto mb-5 size-15 text-primary" />
-          <h1 className="text-center text-primary">
-            Üyeliğiniz Onaylandı!
-          </h1>
+          <h1 className="text-center text-primary">Üyeliğiniz Onaylandı!</h1>
           <p className="text-center">
-            BlackCardHouse'a katıldığınız için teşekkür ederiz.
-            <br />Aktif hizmetinizin detaylarını içeren bir onay e-postası gelen kutunuza gönderildi.
+            BlackCardHouse&apos;a katıldığınız için teşekkür ederiz.
+            <br />
+            Aktif hizmetinizin detaylarını içeren bir onay e-postası gelen
+            kutunuza gönderildi.
             <br />
             <br />
-            Concierge ekibimizden biri kısa süre içinde verdiğiniz Telegram kullanıcı adı üzerinden sizinle iletişime geçecektir. Seyahat planlaması, özel rezervasyonlar ve lüks ürün temini gibi ihtiyaçlarınız için artık destek bir mesaj uzağınızda.
+            Concierge ekibimizden biri kısa süre içinde verdiğiniz Telegram
+            kullanıcı adı üzerinden sizinle iletişime geçecektir. Seyahat
+            planlaması, özel rezervasyonlar ve lüks ürün temini gibi
+            ihtiyaçlarınız için artık destek bir mesaj uzağınızda.
             <br />
             <br />
-            Ek sorularınız için destek ekibimize şu adresten ulaşabilirsiniz: 
+            Ek sorularınız için destek ekibimize şu adresten ulaşabilirsiniz:
             <a className="text-primary" href="mailto:info@blackcardhouse.com">
               info@blackcardhouse.com
             </a>

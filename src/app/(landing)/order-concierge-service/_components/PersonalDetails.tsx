@@ -23,7 +23,7 @@ import { format } from "date-fns";
 import { CalendarIcon } from "lucide-react";
 import { useFormContext, useWatch } from "react-hook-form";
 import z from "zod";
-import ÜlkeFormField from "./ÜlkeFormField";
+import CountryFormField from "./CountryFormField";
 
 export default function PersonalDetails() {
   const { control, getValues } = useFormContext<CheckoutFormValues>();
@@ -217,7 +217,8 @@ export default function PersonalDetails() {
                 if (getClientType === CLIENT_TYPES.EXISTING) return true;
                 if (!Boolean(value.trim().length > 0)) return "Zorunlu alan";
                 return (
-                  value.trim().length >= 6 || "Geçerli bir telefon numarası girin"
+                  value.trim().length >= 6 ||
+                  "Geçerli bir telefon numarası girin"
                 );
               },
             }}
@@ -306,7 +307,7 @@ export default function PersonalDetails() {
             hidden: clientType === CLIENT_TYPES.EXISTING,
           })}
         >
-          <ÜlkeFormField />
+          <CountryFormField />
         </div>
         <div
           className={cn("col-span-full", {

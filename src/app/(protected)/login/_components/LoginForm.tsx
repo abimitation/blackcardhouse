@@ -2,9 +2,15 @@
 
 import { authClient } from "@/lib/authClient";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Button, Checkbox, Group, PasswordInput, TextInput } from "@mantine/core";
+import {
+  Button,
+  Checkbox,
+  Group,
+  PasswordInput,
+  TextInput,
+} from "@mantine/core";
 import { notifications } from "@mantine/notifications";
-import { redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useTransition } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { z } from "zod";
@@ -16,8 +22,11 @@ const loginFormSchema = z.object({
 });
 
 export default function LoginForm() {
+  const router = useRouter();
   const [isTransitionPending, startTransition] = useTransition();
-  const { control, handleSubmit, formState } = useForm<z.infer<typeof loginFormSchema>>({
+  const { control, handleSubmit, formState } = useForm<
+    z.infer<typeof loginFormSchema>
+  >({
     resolver: zodResolver(loginFormSchema),
     defaultValues: { email: "", password: "", shouldRememberMe: false },
   });
@@ -29,26 +38,67 @@ export default function LoginForm() {
       password,
       rememberMe: shouldRememberMe,
       fetchOptions: {
-        onSuccess: () => startTransition(() => redirect("/dashboard")),
-        onError: ({ error }) => notifications.show({ color: "red", message: error.message }),
+        onSuccess: () => {
+          startTransition(() => {
+            router.push("/dashboard");
+          });
+        },
+        onError: ({ error }) => {
+          notifications.show({ color: "red", message: error.message });
+        },
       },
     });
   }
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <Controller name="email" control={control} render={({ field, fieldState: { error } }) => (
-        <TextInput data-autofocus label="E-posta" error={error?.message} disabled={formState.isSubmitting || isTransitionPending} {...field} />
-      )} />
-      <Controller name="password" control={control} render={({ field, fieldState: { error } }) => (
-        <PasswordInput mt="md" label="Şifre" error={error?.message} disabled={formState.isSubmitting || isTransitionPending} {...field} />
-      )} />
+      <Controller
+        name="email"
+        control={control}
+        render={({ field, fieldState: { error } }) => (
+          <TextInput
+            data-autofocus
+            label="E-posta"
+            error={error?.message}
+            disabled={formState.isSubmitting || isTransitionPending}
+            {...field}
+          />
+        )}
+      />
+      <Controller
+        name="password"
+        control={control}
+        render={({ field, fieldState: { error } }) => (
+          <PasswordInput
+            mt="md"
+            label="Şifre"
+            error={error?.message}
+            disabled={formState.isSubmitting || isTransitionPending}
+            {...field}
+          />
+        )}
+      />
       <Group justify="space-between" mt="lg">
-        <Controller name="shouldRememberMe" control={control} render={({ field }) => (
-          <Checkbox label="Beni hatırla" name={field.name} checked={field.value} onChange={field.onChange} disabled={formState.isSubmitting || isTransitionPending} />
-        )} />
+        <Controller
+          name="shouldRememberMe"
+          control={control}
+          render={({ field }) => (
+            <Checkbox
+              label="Beni hatırla"
+              name={field.name}
+              checked={field.value}
+              onChange={field.onChange}
+              disabled={formState.isSubmitting || isTransitionPending}
+            />
+          )}
+        />
       </Group>
-      <Button mt="xl" type="submit" fullWidth loading={formState.isSubmitting || isTransitionPending}>
+      <Button
+        mt="xl"
+        type="submit"
+        fullWidth
+        loading={formState.isSubmitting || isTransitionPending}
+      >
         Giriş Yap
       </Button>
     </form>

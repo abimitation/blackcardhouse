@@ -5,7 +5,7 @@ import { RadioGroupItem } from "@/components/ui/RadioGroup";
 import { Separator } from "@/components/ui/Separator";
 import { Slider } from "@/components/ui/Slider";
 import { Currency } from "@/config/currencies";
-import { Hizmet, HizmetId } from "@/config/services";
+import { Service, ServiceId } from "@/config/services";
 import { formatPrice } from "@/lib/utils";
 import { CheckoutFormValues } from "@/lib/validations";
 import { CheckIcon } from "lucide-react";
@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 import { useFormContext, useWatch } from "react-hook-form";
 
 const serviceMeta: Partial<
-  Record<HizmetId, { label: string; initialValue?: number; max?: number }>
+  Record<ServiceId, { label: string; initialValue?: number; max?: number }>
 > = {
   request_access: { label: "Talepler" },
   daily_access: { label: "Gün", max: 30 },
@@ -39,9 +39,9 @@ function calculateCost({
   return totalCost;
 }
 
-export default function HizmetItemDynamic({ service }: { service: Hizmet }) {
+export default function ServiceItemDynamic({ service }: { service: Service }) {
   const { control, setValue } = useFormContext<CheckoutFormValues>();
-  const [currency, selectedHizmet] = useWatch({
+  const [currency, selectedService] = useWatch({
     control,
     name: ["currency", "service"],
   });
@@ -56,7 +56,7 @@ export default function HizmetItemDynamic({ service }: { service: Hizmet }) {
   });
 
   const handleValueCommit = () => {
-    if (selectedHizmet !== service.id) return;
+    if (selectedService !== service.id) return;
 
     setValue("serviceAmount", amount);
   };

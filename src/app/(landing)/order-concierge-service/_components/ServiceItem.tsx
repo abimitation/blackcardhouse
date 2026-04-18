@@ -2,13 +2,13 @@ import { FormControl, FormItem, FormLabel } from "@/components/ui/Form";
 import { RadioGroupItem } from "@/components/ui/RadioGroup";
 import { Separator } from "@/components/ui/Separator";
 import { Currency } from "@/config/currencies";
-import { Hizmet } from "@/config/services";
+import { Service } from "@/config/services";
 import { formatPrice } from "@/lib/utils";
 import { CheckoutFormValues } from "@/lib/validations";
 import { CheckIcon } from "lucide-react";
 import { useFormContext, useWatch } from "react-hook-form";
 
-export default function HizmetItem({ service }: { service: Hizmet }) {
+export default function ServiceItem({ service }: { service: Service }) {
   const { control } = useFormContext<CheckoutFormValues>();
   const currency = useWatch({ control, name: "currency" }) as Currency;
 

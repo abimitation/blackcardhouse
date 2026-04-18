@@ -23,7 +23,7 @@ import CurrencyFormField from "./CurrencyFormField";
 import Marketplace from "./Marketplace";
 import PaymentMethod from "./PaymentMethod";
 import PersonalDetails from "./PersonalDetails";
-import Hizmet from "./Hizmet";
+import Service from "./Service";
 import TermsFormField from "./TermsFormField";
 
 export default function CheckoutForm() {
@@ -65,7 +65,7 @@ export default function CheckoutForm() {
         <PersonalDetails />
         <CurrencyFormField />
         <Marketplace />
-        <Hizmet />
+        <Service />
         <PaymentMethod />
         <TermsFormField />
         <Button

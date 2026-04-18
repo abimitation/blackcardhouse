@@ -11,14 +11,13 @@ import { Separator } from "@/components/ui/Separator";
 import { services } from "@/config/services";
 import { CheckoutFormValues, CLIENT_TYPES } from "@/lib/validations";
 import { useFormContext, useWatch } from "react-hook-form";
-import HizmetItem from "./HizmetItem";
-import HizmetItemDynamic from "./HizmetItemDynamic";
+import ServiceItem from "./ServiceItem";
+import ServiceItemDynamic from "./ServiceItemDynamic";
 
-export default function Hizmet() {
+export default function Service() {
   const { control, setValue } = useFormContext<CheckoutFormValues>();
   const clientType = useWatch({ control, name: "clientType" });
-  const title =
-    clientType === CLIENT_TYPES.NEW ? "Hizmet" : "Concierge Hizmet";
+  const title = clientType === CLIENT_TYPES.NEW ? "Hizmet" : "Concierge Hizmet";
   const description =
     clientType === CLIENT_TYPES.NEW
       ? "Premium concierge hizmetleri arasından seçim yapın. Bazıları sabit erişim sunar, bazıları ise deneyimi size göre şekillendirmenize olanak tanır."
@@ -55,7 +54,7 @@ export default function Hizmet() {
                     {services.map((service) => {
                       if (service.isDynamic) return null;
 
-                      return <HizmetItem key={service.id} service={service} />;
+                      return <ServiceItem key={service.id} service={service} />;
                     })}
 
                     <Separator className="col-span-full" />
@@ -66,7 +65,7 @@ export default function Hizmet() {
                   if (!service.isDynamic) return null;
 
                   return (
-                    <HizmetItemDynamic key={service.id} service={service} />
+                    <ServiceItemDynamic key={service.id} service={service} />
                   );
                 })}
               </RadioGroup>

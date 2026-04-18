@@ -103,12 +103,12 @@ export const services = [
 export const serviceIds = services.map((s) => s.id);
 export const serviceAmounts = services.map((s) => s.amount);
 
-export type Hizmet = (typeof services)[number];
-export type HizmetId = (typeof serviceIds)[number];
-type HizmetAmount = (typeof serviceAmounts)[number];
+export type Service = (typeof services)[number];
+export type ServiceId = (typeof serviceIds)[number];
+type ServiceAmount = (typeof serviceAmounts)[number];
 
-export const serviceMap = serviceIds as [HizmetId, ...HizmetId[]];
+export const serviceMap = serviceIds as [ServiceId, ...ServiceId[]];
 
 export const servicePricing = Object.fromEntries(
   services.map((s) => [s.id, s.amount]),
-) as Record<HizmetId, HizmetAmount>;
+) as Record<ServiceId, ServiceAmount>;
