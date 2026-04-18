@@ -1,0 +1,3 @@
+CREATE TYPE "public"."marketplace_package" AS ENUM('food_delivery', 'medicine_delivery', 'errand_running', 'gift_shopping', 'transportation_booking', 'cleaning_services', 'restaurant_reservations', 'travel_arrangements', 'event_tickets', 'stays_and_accommodations', 'car_rentals', 'private_chef_services', 'premium_travel_package', 'luxury_suite_booking', 'event_organisation', 'personal_shopper', 'private_jet_charter', 'yacht_charter');--> statement-breakpoint
+ALTER TABLE "orders" ADD COLUMN "marketplace_package" "marketplace_package"[];--> statement-breakpoint
+ALTER TABLE "users" ADD COLUMN "marketplace_package" "marketplace_package"[];

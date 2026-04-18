@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-primary: #1c2e24;
+  --color-surface: #1b1b1b;
+  --color-ivory: #eeede9;
+}
