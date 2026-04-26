@@ -1,15 +1,16 @@
 "use server";
 
+import tr from "@/messages/tr.json";
+import en from "@/messages/en.json";
 import { mailClient } from "@/lib/mail/client";
 import { contactFormMailTemplate } from "@/lib/mail/templates/contactForm";
 import {
   orderConfirmationMailTemplate,
   OrderConfirmationMailTemplateProps,
 } from "@/lib/mail/templates/orderConfirmation";
-import { contactFormSchema } from "@/lib/validations";
 import { z } from "zod";
 
-export async function sendContactForm(data: z.infer<typeof contactFormSchema>) {
+export async function sendContactForm(data: any) {
   try {
     await mailClient.sendMail({
       from: `"BlackCardHouse" <${process.env.MAIL_USERNAME}>`,
@@ -33,11 +34,15 @@ export async function sendOrderConfirmationMail(
   data: OrderConfirmationMailTemplateProps,
 ) {
   try {
+    const messagesTr = tr as any;
+    const messagesEn = en as any;
+    const messages = data.locale === "tr" ? messagesTr : messagesEn;
+
     await Promise.all([
       await mailClient.sendMail({
         from: `"BlackCardHouse" <${process.env.MAIL_USERNAME}>`,
         to: data.email,
-        subject: "Sipariş onayı",
+        subject: messages.OrderConfirmation.subject,
         html: orderConfirmationMailTemplate(data),
       }),
       await mailClient.sendMail({

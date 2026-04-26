@@ -29,6 +29,7 @@ const checkoutInputSchema = z.preprocess(
       "country",
       "experiences",
       "service",
+      "locale",
     ];
 
     for (const field of optionalFields) {
@@ -55,6 +56,7 @@ const checkoutInputSchema = z.preprocess(
     country: true,
     experiences: true,
     service: true,
+    locale: true,
   }),
 );
 
@@ -175,6 +177,7 @@ export const checkoutRouter = {
             userId: user.id,
             service: input.service || user.service,
             marketplacePackages: input.marketplacePackages || [],
+            locale: input.locale || "tr",
           })
           .returning();
 
@@ -208,6 +211,7 @@ export const checkoutRouter = {
               ? input.street!
               : user.street!,
           userId: user.id,
+          locale: input.locale,
         };
 
         const { data, error } = await createPayment(paymentDetails);

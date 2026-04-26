@@ -1,15 +1,12 @@
 export const MARKETPLACE_CATEGORIES = {
   DAILY_SERVICES: {
     ID: "daily_services",
-    LABEL: "Daily Hizmets",
   },
   BESPOKE_EXPERIENCES: {
     ID: "bespoke_experiences",
-    LABEL: "Özel Deneyimler",
   },
   PREMIUM_SERVICES: {
     ID: "premium_services",
-    LABEL: "Premium Hizmets",
   },
 } as const;
 

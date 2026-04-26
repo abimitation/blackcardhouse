@@ -123,6 +123,7 @@ export const ordersTable = pgTable("orders", {
   paymentId: varchar(),
   paymentStatus: paymentStatusEnum("payment_status").notNull(),
   marketplacePackages: marketplacePackageEnum("marketplace_package").array(),
+  locale: varchar({ length: 10 }).default("tr").notNull(),
   ...timestamps,
 });
 

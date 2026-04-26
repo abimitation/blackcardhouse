@@ -1,3 +1,4 @@
+import LocaleSwitcher from "./LocaleSwitcher";
 import Logo from "./Logo";
 import MobileMenu from "./MobileMenu";
 import Nav from "./Nav";
@@ -11,6 +12,7 @@ export default function Header() {
         <Logo />
         {/* {isClient && <Nav className="ms-auto max-xl:hidden" />} */}
         <Nav className="ms-auto max-xl:hidden" />
+        <LocaleSwitcher />
         <MobileMenu />
       </div>
     </header>

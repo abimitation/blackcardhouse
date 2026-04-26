@@ -17,6 +17,7 @@ type Payment = {
   postcode: string;
   street: string;
   userId: string;
+  locale?: string;
 };
 
 export async function createPayment({
@@ -30,6 +31,7 @@ export async function createPayment({
   postcode,
   street,
   userId,
+  locale,
 }: Payment) {
   if (
     !process.env.NEXT_PUBLIC_URL ||
@@ -57,7 +59,7 @@ export async function createPayment({
           from_email: email,
           from_first_name: firstName,
           from_last_name: lastName,
-          locale_lang: "tr",
+          locale_lang: locale === "en" ? "en" : "tr",
           payer_id: userId,
           redirect_url: `${process.env.NEXT_PUBLIC_URL}/success?orderId=${orderId}`,
           referer_domain: process.env.NEXT_PUBLIC_URL,

@@ -1,3 +1,5 @@
+import tr from "@/messages/tr.json";
+import en from "@/messages/en.json";
 import { Currency } from "@/config/currencies";
 import {
   MARKETPLACE_PACKAGES,
@@ -20,6 +22,7 @@ export type OrderConfirmationMailTemplateProps = {
   transactionDate: string;
   transactionId: string;
   service: ServiceId | null;
+  locale: "tr" | "en";
 };
 
 export const orderConfirmationMailTemplate = ({
@@ -36,15 +39,16 @@ export const orderConfirmationMailTemplate = ({
   transactionDate,
   transactionId,
   service,
+  locale,
 }: OrderConfirmationMailTemplateProps) => {
   const selectedService = services.find((s) => s.id === service) ?? null;
-
-  // Flatten all marketplace packages for easy lookup
   const allMarketplacePackages = Object.values(MARKETPLACE_PACKAGES).flat();
+  const messages = (locale === "tr" ? tr : en) as any;
+  const t = messages.OrderConfirmation;
 
   return `
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-    <html dir="ltr" lang="tr">
+    <html dir="ltr" lang="${locale}">
       <head>
         <link
           rel="preload"
@@ -72,7 +76,7 @@ export const orderConfirmationMailTemplate = ({
             max-width: 0;
           "
         >
-          BlackCardHouse üyelik satın alma onayı
+          ${t.header}
           <div>
              ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿ ‌​‍‎‏﻿
           </div>
@@ -96,10 +100,10 @@ export const orderConfirmationMailTemplate = ({
                   height="64"
                   width="64" />
                 <p style="font-size: 16px; line-height: 26px; margin: 16px 0">
-                  Sayın ${firstName} ${lastName},
+                  ${t.greeting.replace("{name}", `${firstName} ${lastName}`)}
                 </p>
                 <p style="font-size: 16px; line-height: 26px; margin: 16px 0">
-                  Satın alımınız için teşekkür ederiz. BlackCardHouse üyeliğiniz artık aktif. İşlem detaylarınız aşağıdadır:
+                  ${t.thanks}
                 </p>
 
                 <table
@@ -173,7 +177,7 @@ export const orderConfirmationMailTemplate = ({
                                                     color: rgb(102, 102, 102);
                                                   "
                                                 >
-                                                  İŞLEM TARİHİ
+                                                  ${t.transaction_date}
                                                 </p>
                                                 <p
                                                   style="
@@ -218,7 +222,7 @@ export const orderConfirmationMailTemplate = ({
                                                     color: rgb(102, 102, 102);
                                                   "
                                                 >
-                                                  İŞLEM NO
+                                                  ${t.transaction_no}
                                                 </p>
                                                 <p
                                                   style="
@@ -263,7 +267,7 @@ export const orderConfirmationMailTemplate = ({
                                                     color: rgb(102, 102, 102);
                                                   "
                                                 >
-                                                  SİPARİŞ NO
+                                                  ${t.order_no}
                                                 </p>
                                                 <p
                                                   style="
@@ -304,7 +308,7 @@ export const orderConfirmationMailTemplate = ({
                                     color: rgb(102, 102, 102);
                                   "
                                 >
-                                  BILLED TO
+                                  ${t.billed_to}
                                 </p>
                                 <p
                                   style="
@@ -366,9 +370,8 @@ export const orderConfirmationMailTemplate = ({
                   </tbody>
                 </table>
 
-                ${
-                  marketplacePackages && marketplacePackages.length > 0
-                    ? `<table
+                ${marketplacePackages && marketplacePackages.length > 0
+      ? `<table
                   align="center"
                   width="100%"
                   border="0"
@@ -390,13 +393,13 @@ export const orderConfirmationMailTemplate = ({
                         >
                           <tbody style="width: 100%">
                           ${marketplacePackages
-                            .map((packageId) => {
-                              const pkg = allMarketplacePackages.find(
-                                (p) => p.id === packageId,
-                              );
-                              if (!pkg) return "";
+        .map((packageId) => {
+          const pkg = allMarketplacePackages.find(
+            (p) => p.id === packageId,
+          );
+          if (!pkg) return "";
 
-                              return `<tr style="width: 100%">
+          return `<tr style="width: 100%">
                               <td
                                 data-id="__react-email-column"
                                 style="width: 64px"
@@ -425,7 +428,7 @@ export const orderConfirmationMailTemplate = ({
                                     padding: 0;
                                   "
                                 >
-                                  ${pkg.title}
+                                  ${messages.MarketplaceItems[pkg.id as keyof typeof messages.MarketplaceItems]?.title ?? pkg.title}
                                 </p>
                                 <p
                                   style="
@@ -436,7 +439,7 @@ export const orderConfirmationMailTemplate = ({
                                     padding: 0;
                                   "
                                 >
-                                  Marketplace Package
+                                  ${t.marketplace_package}
                                 </p>
                               </td>
                               <td
@@ -461,8 +464,8 @@ export const orderConfirmationMailTemplate = ({
                                 </p>
                               </td>
                             </tr>`;
-                            })
-                            .join("")}
+        })
+        .join("")}
                           </tbody>
                         </table>
                       </td>
@@ -470,12 +473,11 @@ export const orderConfirmationMailTemplate = ({
                   </tbody>
                 </table>
                 `
-                    : ""
-                }
+      : ""
+    }
 
-                ${
-                  selectedService
-                    ? `<table
+                ${selectedService
+      ? `<table
                   align="center"
                   width="100%"
                   border="0"
@@ -525,7 +527,7 @@ export const orderConfirmationMailTemplate = ({
                                     padding: 0;
                                   "
                                 >
-                                  ${selectedService.title}
+                                  ${messages.Services[selectedService.id as keyof typeof messages.Services]?.title ?? selectedService.title}
                                 </p>
                                 <p
                                   style="
@@ -536,7 +538,7 @@ export const orderConfirmationMailTemplate = ({
                                     padding: 0;
                                   "
                                 >
-                                  Service
+                                  ${t.service}
                                 </p>
                               </td>
                               <td
@@ -568,8 +570,8 @@ export const orderConfirmationMailTemplate = ({
                   </tbody>
                 </table>
                 `
-                    : ""
-                }
+      : ""
+    }
 
                 <hr
                   style="
@@ -616,7 +618,7 @@ export const orderConfirmationMailTemplate = ({
                                     text-align: right;
                                   "
                                 >
-                                  TOTAL
+                                  ${t.total}
                                 </p>
                               </td>
                               <td
@@ -660,11 +662,10 @@ export const orderConfirmationMailTemplate = ({
                 />
 
                 <p style="font-size: 16px; line-height: 26px; margin: 16px 0">
-                  If you did not authorize this transaction, please contact our
-                  hemen destek ekibimizle info@blackcardhouse.com üzerinden iletişime geçin.
+                  ${t.unauthorized_info.replace("{email}", "info@blackcardhouse.com")}
                 </p>
                 <p style="font-size: 16px; line-height: 26px; margin: 16px 0">
-                  Saygılarımızla,<br />BlackCardHouse ekibi
+                  ${t.regards},<br />${t.team}
                 </p>
                 <hr
                   style="
@@ -689,28 +690,28 @@ export const orderConfirmationMailTemplate = ({
                     href="https://blackcardhouse.com/payment-policy"
                     style="color: #067df7; text-decoration-line: none"
                     target="_blank"
-                    >Ödeme Politikası</a
+                    >${messages.Footer.payment}</a
                   >
                   <!-- -->•<!-- -->
                   <a
                     href="https://blackcardhouse.com/privacy-policy"
                     style="color: #067df7; text-decoration-line: none"
                     target="_blank"
-                    >Gizlilik Politikası<!-- -->
+                    >${messages.Footer.privacy}<!-- -->
                   </a>
                   <!-- -->•<!-- -->
                   <a
                     href="https://blackcardhouse.com/terms-of-service"
                     style="color: #067df7; text-decoration-line: none"
                     target="_blank"
-                    >Hizmet Şartları</a
+                    >${messages.Footer.terms}</a
                   >
                   <!-- -->•<!-- -->
                   <a
                     href="https://blackcardhouse.com/refund-and-cancellation-policy"
                     style="color: #067df7; text-decoration-line: none"
                     target="_blank"
-                    >İade ve İptal Politikası<!-- -->
+                    >${messages.Footer.refund}<!-- -->
                   </a>
                 </p>
                 <p

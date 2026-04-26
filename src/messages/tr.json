@@ -1,0 +1,572 @@
+{
+    "About": {
+        "title": "Her Zaman, Her Yerde Yanınızda Olan Güvenilir Global Concierge",
+        "description": "BlackCardHouse ile bulunduğunuz her yerde 7/24 premium ve kişiselleştirilmiş hizmetlere erişirsiniz. Özel asistan ekibimiz, tercihlerinize göre seçkin ve lüks deneyimler planlar.",
+        "description_extra": "En iyi oteller, restoranlar, etkinlikler ve çok daha fazlasına ayrıcalıklı erişimin keyfini çıkarın.",
+        "hotels": "Beş yıldızlı otel partneri",
+        "events": "Yıllık seçkin etkinlik",
+        "customers": "Dünya çapında memnun müşteri"
+    },
+    "Hero": {
+        "title": "Yaşam Tarzınızı Özel Concierge Hizmetleriyle Bir Üst Seviyeye Taşıyın",
+        "description": "BlackCardHouse, ihtiyaçlarınıza göre şekillenen seçkin hizmetler sunar; her ayrıntı özen, hız ve kişisel ilgiyle yönetilir.",
+        "button": "Başlayın"
+    },
+    "CTA": {
+        "title": "VIP Erişiminiz Doğrudan Telegram’da",
+        "description": "İster seyahat planlayan, ister seçkin restoran rezervasyonları yapan ya da özel etkinliklere erişmek istiyor olun; concierge hizmetimiz size anında kişisel destek sunar.",
+        "button": "Concierge Hizmeti Sipariş Et"
+    },
+    "Chat": {
+        "title": "Concierge Desteği Parmaklarınızın Ucunda",
+        "description": "Bir sorunuz olduğunda veya planlarınız için desteğe ihtiyaç duyduğunuzda ekibimiz sadece bir mesaj uzağınızda. Basit bir sohbet üzerinden hızlı ve kişisel destek alın.",
+        "button": "Şimdi Bağlan"
+    },
+    "Nav": {
+        "experiences": "Deneyimler",
+        "about": "Hakkımızda",
+        "order_service": "Concierge Hizmeti Sipariş Et"
+    },
+    "ContactUs": {
+        "trigger": "Bize Ulaşın",
+        "title": "Bize Ulaşın",
+        "description": "Aşağıdaki formu doldurun; concierge ekibimiz en kısa sürede sizinle iletişime geçecektir."
+    },
+    "ContactForm": {
+        "firstName": "Ad",
+        "lastName": "Soyad",
+        "email": "E-posta",
+        "phone": "Telefon",
+        "subject": "Konu",
+        "message": "Mesaj",
+        "submit": "Mesaj Gönder",
+        "success": "Mesajınız başarıyla gönderildi!"
+    },
+    "Footer": {
+        "partnerships": "Partnerlikler",
+        "chargeback": "Chargeback Politikası",
+        "payment": "Ödeme Politikası",
+        "privacy": "Gizlilik Politikası",
+        "terms": "Hizmet Şartları",
+        "refund": "İade ve İptal Politikası",
+        "rights": "Tüm hakları saklıdır.",
+        "registration": "Registration number",
+        "office": "Registered office address"
+    },
+    "Order": {
+        "title": "Concierge Hizmeti Sipariş Et",
+        "description": "Bilgilerinizi doldurun ve concierge hizmetine devam etmek için planınızı seçin.",
+        "submit": "Ödemeye Devam Et",
+        "personal_details": "Kişisel bilgiler",
+        "per_month": "ay",
+        "one_time_payment": "tek seferlik ödeme"
+    },
+    "PersonalDetails": {
+        "title": "Kişisel Bilgiler",
+        "firstName": "Ad",
+        "lastName": "Soyad",
+        "dob": "Doğum tarihi",
+        "dob_placeholder": "Tarih seçin",
+        "telegram": "Telegram",
+        "email": "E-mail",
+        "phone": "Telefon",
+        "address": "Adres",
+        "city": "Şehir",
+        "postcode": "Posta kodu",
+        "country": "Ülke",
+        "select_country": "Ülke seçin",
+        "search_country": "Ülke ara...",
+        "country_not_found": "Ülke bulunamadı.",
+        "experiences": "İlgi alanları",
+        "experiences_placeholder": "İlgi alanlarını ara",
+        "notes": "Ek notlar",
+        "optional": "İsteğe bağlı",
+        "required_field": "Zorunlu alan",
+        "invalid_email": "Geçerli bir e-posta adresi girin",
+        "invalid_phone": "Geçerli bir telefon numarası girin",
+        "min_experience": "En az 1 deneyim seçin"
+    },
+    "Service": {
+        "title_new": "Hizmet",
+        "title_existing": "Concierge Hizmet",
+        "description_new": "Premium concierge hizmetleri arasından seçim yapın. Bazıları sabit erişim sunar, bazıları ise deneyimi size göre şekillendirmenize olanak tanır.",
+        "description_existing": "Tercihlerinize en uygun premium concierge hizmetleri arasından seçim yapın.",
+        "requests_label": "Talepler",
+        "days_label": "Gün"
+    },
+    "Checkout": {
+        "new_client": "Yeni Müşteri",
+        "existing_client": "Mevcut Müşteri",
+        "currency": "Para birimi",
+        "currency_placeholder": "Para birimi seçin"
+    },
+    "Marketplace": {
+        "title": "Concierge Marketplace",
+        "description": "Premium hizmetler ve özel deneyimlerden oluşan seçkimizle yaşam tarzınızı geliştirin. Günlük ihtiyaçlardan özel organizasyonlara kadar her şey özenle hazırlanmıştır."
+    },
+    "Payment": {
+        "title": "Ödeme yöntemi",
+        "card": "Pay with Card",
+        "info": "Ödemeleri başlıca kredi kartlarıyla kabul ediyoruz. Satın alma işleminizi güvenli ve pratik şekilde tamamlayabilirsiniz. Ödeme bilgileriniz şifrelenir ve korunur.",
+        "currency_info": "Sitemizdeki tüm işlemler seçtiğiniz para biriminde işlenir. Desteklenen para birimleri: {currencies}. Finans kuruluşunuz döviz dönüşümü veya kur farkı nedeniyle ek ücret uygulayabilir."
+    },
+    "Terms": {
+        "read_and_accept": "<link>Hizmet Şartları</link> metnini okudum ve kabul ediyorum."
+    },
+    "Experiences": {
+        "travel": {
+            "title": "Seyahat",
+            "description": "İster lüks bir otel, ister özel ada kaçamağı ya da büyüleyici bir sahil destinasyonu olsun; seyahat ekibimiz size özel kusursuz bir plan hazırlar."
+        },
+        "luxury_transportation": {
+            "title": "Lüks Ulaşım",
+            "description": "Birinci sınıf uçuşlardan özel jetlere ve lüks yatlara kadar kişiselleştirilmiş ulaşım çözümleriyle en üst düzey konforu yaşayın."
+        },
+        "fine_dining_and_nightlife": {
+            "title": "Fine Dining ve Gece Hayatı",
+            "description": "Seçkin restoranlara, Michelin yıldızlı mekanlara ve özel etkinliklere ayrıcalıklı erişimin keyfini çıkarın."
+        },
+        "luxury_goods": {
+            "title": "Lüks Ürünler",
+            "description": "Nadir ve özel lüks ürünler dahil olmak üzere aradığınız parçaların teminini uzman ekibimize bırakın."
+        }
+    },
+    "MarketplaceItems": {
+        "daily_services": "Daily Hizmets",
+        "bespoke_experiences": "Özel Deneyimler",
+        "premium_services": "Premium Hizmets",
+        "food_delivery": {
+            "title": "Yemek Teslimatı",
+            "features": [
+                "Hızlı teslimat",
+                "Güvenilir hizmet"
+            ]
+        },
+        "medicine_delivery": {
+            "title": "İlaç Teslimatı",
+            "features": [
+                "Reçeteli ve reçetesiz ilaçlar",
+                "Gizli teslimat"
+            ]
+        },
+        "errand_running": {
+            "title": "Günlük İş Takibi",
+            "features": [
+                "Kişisel iş takibi",
+                "Zaman kazandıran destek"
+            ]
+        },
+        "gift_shopping": {
+            "title": "Hediye Alışverişi",
+            "features": [
+                "Her durum için ürün temini",
+                "Teslimat dahil"
+            ]
+        },
+        "transportation_booking": {
+            "title": "Ulaşım Rezervasyonu",
+            "features": [
+                "Hızlı ulaşım rezervasyonu",
+                "Verimli lojistik"
+            ]
+        },
+        "cleaning_services": {
+            "title": "Temizlik Hizmetleri",
+            "features": [
+                "Profesyonel ev ve ofis temizliği",
+                "Kusursuz sonuçlar"
+            ]
+        },
+        "restaurant_reservations": {
+            "title": "Restoran Rezervasyonları",
+            "features": [
+                "Seçkin restoranlarda masa ayırtma",
+                "Sorunsuz rezervasyon"
+            ]
+        },
+        "travel_arrangements": {
+            "title": "Seyahat Düzenlemeleri",
+            "features": [
+                "Uçuş ve konaklama rezervasyonu",
+                "Rota planlaması"
+            ]
+        },
+        "event_tickets": {
+            "title": "Etkinlik Biletleri",
+            "features": [
+                "Özel etkinliklere erişim",
+                "VIP oturma seçenekleri"
+            ]
+        },
+        "stays_and_accommodations": {
+            "title": "Konaklama Seçenekleri",
+            "features": [
+                "Lüks otel rezervasyonları",
+                "Kişiselleştirilmiş konaklama deneyimleri"
+            ]
+        },
+        "car_rentals": {
+            "title": "Araç Kiralama",
+            "features": [
+                "Premium araç seçenekleri",
+                "Kolay teslim alma ve bırakma"
+            ]
+        },
+        "private_chef_services": {
+            "title": "Private Chef Hizmets",
+            "features": [
+                "Evde gurme yemek",
+                "Özel menüler",
+                "Profesyonel hizmet"
+            ]
+        },
+        "premium_travel_package": {
+            "title": "Premium Seyahat Paketi",
+            "features": [
+                "Kişiselleştirilmiş seyahat planı",
+                "Lüks konaklama ve ulaşım",
+                "Özel deneyimler ve aktiviteler"
+            ]
+        },
+        "luxury_suite_booking": {
+            "title": "Lüks Suit Rezervasyonu",
+            "features": [
+                "5 yıldızlı suit rezervasyonları",
+                "VIP hizmetler ve ayrıcalıklar",
+                "Kişisel concierge desteği"
+            ]
+        },
+        "event_organisation": {
+            "title": "Etkinlik Organizasyonu",
+            "features": [
+                "Kapsamlı etkinlik koordinasyonu",
+                "Tedarikçi yönetimi",
+                "Yerinde destek"
+            ]
+        },
+        "personal_shopper": {
+            "title": "Kişisel Alışveriş Danışmanı",
+            "features": [
+                "Kişiye özel alışveriş deneyimi",
+                "Seçkin markalara erişim",
+                "Stil danışmanlığı"
+            ]
+        },
+        "private_jet_charter": {
+            "title": "Özel Jet Kiralama",
+            "features": [
+                "Global seyahat esnekliği",
+                "VIP terminal erişimi",
+                "Lüks uçuş içi hizmet"
+            ]
+        },
+        "yacht_charter": {
+            "title": "Yat Kiralama",
+            "features": [
+                "Özel deniz deneyimleri",
+                "Profesyonel mürettebat",
+                "Özel rotalar"
+            ]
+        }
+    },
+    "Services": {
+        "signature_30": {
+            "title": "Signature 30",
+            "features": [
+                "Ayda 30 talebe kadar",
+                "7/24 concierge erişimi",
+                "Seyahat planlama ve rota desteği",
+                "Yaşam tarzı yönetimi (hedefler, planlar vb.)"
+            ]
+        },
+        "signature_75": {
+            "title": "Signature 75",
+            "features": [
+                "Ayda 75 talebe kadar",
+                "7/24 concierge erişimi",
+                "Seyahat planlama ve rota desteği",
+                "Yaşam tarzı yönetimi (hedefler, planlar vb.)"
+            ]
+        },
+        "signature_100": {
+            "title": "Signature 100",
+            "features": [
+                "Ayda 100 talebe kadar",
+                "Öncelikli yanıt süreleri",
+                "7/24 concierge erişimi",
+                "Seyahat ve konaklama koordinasyonu",
+                "Yaşam tarzı planlaması (hedefler, deneyimler, etkinlikler)"
+            ]
+        },
+        "premier": {
+            "title": "Premier",
+            "features": [
+                "Garanti restoran ve etkinlik rezervasyonları",
+                "Seçkin mekanlara VIP erişim",
+                "Gelişmiş seyahat ve kişisel lojistik desteği",
+                "7/24 concierge erişimi"
+            ]
+        },
+        "jet_setter": {
+            "title": "Jet Setter",
+            "features": [
+                "Lüks seyahat concierge hizmeti (uçuşlar, jetler, oteller)",
+                "VIP havalimanı hizmetleri ve lounge erişimi",
+                "100+ beş yıldızlı otelde özel fiyatlar",
+                "Gelişmiş seyahat ve kişisel lojistik desteği",
+                "7/24 concierge erişimi"
+            ]
+        },
+        "executive_elite": {
+            "title": "Executive Elite",
+            "features": [
+                "Ultra öncelikli concierge erişimi",
+                "Kurumsal ve kişisel yaşam tarzı yönetimi",
+                "Etkinlik planlama ve iş seyahati desteği",
+                "Nadir lüks ürün temini",
+                "7/24 concierge erişimi"
+            ]
+        },
+        "daily_access": {
+            "title": "Daily Access",
+            "features": [
+                "Seçilen günler için tam concierge erişimi",
+                "Tatil, etkinlik veya yoğun haftalar için ideal",
+                "Aktif günlerde tüm deneyimlere erişim",
+                "Sürekli bağlılık yok"
+            ]
+        },
+        "request_access": {
+            "title": "Request Access",
+            "features": [
+                "Talep başına ödeme esnekliği",
+                "Tüm deneyimlere erişim",
+                "Seyrek kullanım veya özel ihtiyaçlar için ideal",
+                "Sürekli bağlılık yok"
+            ]
+        }
+    },
+    "RefundPolicy": {
+        "title": "İade ve İptal Politikası",
+        "description": "Bu politika, BlackCardHouse üzerinden satın alınan hizmetler için uygulanacak iade ve iptal esaslarını açıklar.",
+        "membership_info": "Concierge üyelikleri ve erişim paketleri, etkinleştirildikten sonra kural olarak iade edilmez. Hizmet süresi içinde kullanılmayan erişimler ayrıca telafi veya kredi doğurmaz.",
+        "third_party_info": "Belirli rezervasyonlar, etkinlikler veya üçüncü taraf hizmetleri için ek iptal şartları geçerli olabilir. Böyle durumlarda ilgili sağlayıcının koşulları uygulanır.",
+        "operational_info": "BlackCardHouse'un iç operasyonel nedenlerle bir hizmeti yerine getirememesi halinde, duruma göre tam veya kısmi iade ya da kredi değerlendirmesi yapılabilir.",
+        "contact_info": "İade talepleri için bizimle şu adresten iletişime geçin:"
+    },
+    "PrivacyPolicy": {
+        "title": "Gizlilik Politikası",
+        "description": "Bu politika, BlackCardHouse'un kişisel verilerinizi nasıl topladığını, kullandığını ve koruduğunu açıklar.",
+        "data_info": "Toplayabileceğimiz bilgiler arasında ad, soyad, e-posta adresi, telefon numarası, Telegram kullanıcı adı, fatura ve teslimat bilgileri ile bize ilettiğiniz diğer bilgiler yer alabilir.",
+        "how_we_use_title": "Verileri Nasıl Kullanıyoruz?",
+        "how_we_use_items": [
+            "Hizmet sunmak ve taleplerinizi yönetmek",
+            "Ödeme ve sipariş süreçlerini yürütmek",
+            "Sizinle iletişim kurmak",
+            "Yasal yükümlülüklere uymak"
+        ],
+        "payment_title": "Ödeme Bilgileri",
+        "payment_info": "BlackCardHouse kredi kartı bilgilerini saklamaz veya işlemez; ödemeler yetkili üçüncü taraf ödeme sağlayıcıları aracılığıyla gerçekleştirilir.",
+        "sharing_title": "Veri Paylaşımı",
+        "sharing_info": "Gerekli olduğu ölçüde, hizmetlerin sağlanabilmesi için verileriniz üçüncü taraf oteller, taşıma şirketleri, etkinlik sağlayıcıları veya ödeme ortaklarıyla paylaşılabilir.",
+        "rights_title": "Haklarınız",
+        "rights_info": "Geçerli mevzuata tabi olarak verilerinize erişim, düzeltme veya silme talebinde bulunabilirsiniz.",
+        "contact_title": "İletişim",
+        "contact_info": "Gizlilikle ilgili sorularınız için:"
+    },
+    "TermsOfService": {
+        "title": "Hizmet Şartları",
+        "date_label": "Yürürlük Tarihi",
+        "date_value": "14/12/2025",
+        "intro": "BlackCardHouse, Birleşik Krallık'ta kayıtlı The Illustrious Company Limited tarafından işletilen premium bir yaşam tarzı yönetimi ve concierge hizmetidir. Bu şartlar, web sitemize, hizmetlerimize ve Telegram dahil iletişim kanallarımıza erişiminizi düzenler.",
+        "agreement": "Hizmetlerimizi kullanarak bu şartları okuduğunuzu, anladığınızı ve kabul ettiğinizi beyan edersiniz.",
+        "sections": [
+            {
+                "title": "1. Hizmet Kapsamı",
+                "content": "BlackCardHouse; seyahat planlama, lüks ulaşım, özel rezervasyonlar, etkinlik erişimi, kişisel alışveriş ve talebe özel concierge desteği sunar. Tüm hizmetler müsaitlik, yerel mevzuat ve üçüncü taraf sağlayıcı koşullarına tabidir."
+            },
+            {
+                "title": "2. Paketler ve Ödeme",
+                "content": "Tüm ücretler peşin ödenir. Üyelikler aksi açıkça belirtilmedikçe otomatik yenilenmez."
+            },
+            {
+                "title": "3. Uygunluk",
+                "content": "Hizmetleri kullanabilmek için en az 18 yaşında olmanız ve bağlayıcı sözleşme yapma ehliyetine sahip olmanız gerekir."
+            },
+            {
+                "title": "4. Müşteri Yükümlülükleri",
+                "items": [
+                    "Doğru ve güncel iletişim bilgileri sağlamak",
+                    "Onay ve ek bilgi taleplerine zamanında yanıt vermek",
+                    "Rezervasyon ve düzenlemeleri nihai onaydan önce kontrol etmek"
+                ]
+            },
+            {
+                "title": "5. Üçüncü Taraf Sağlayıcılar",
+                "content": "Birçok concierge hizmeti bağımsız üçüncü taraf sağlayıcılar aracılığıyla yerine getirilir. BlackCardHouse bu hizmetlerde aracı olarak hareket eder."
+            },
+            {
+                "title": "6. Kullanım Kuralları",
+                "content": "Hizmetler yalnızca yasal ve etik amaçlarla kullanılabilir. Yasadışı, kötüye kullanım içeren veya uygunsuz talepler reddedilebilir."
+            },
+            {
+                "title": "7. Sorumluluk",
+                "content": "BlackCardHouse, yürürlükteki hukukun izin verdiği en geniş ölçüde, dolaylı veya sonuçsal zararlardan sorumlu değildir."
+            },
+            {
+                "title": "8. Fikri Mülkiyet",
+                "content": "Web sitemizde ve hizmetlerimiz kapsamında yer alan içerikler BlackCardHouse veya ilgili hak sahiplerine aittir."
+            },
+            {
+                "title": "9. İletişim",
+                "content": "Bu şartlarla ilgili sorularınız için:"
+            }
+        ]
+    },
+    "Auth": {
+        "login_title": "Giriş Yap",
+        "email_label": "E-posta",
+        "password_label": "Şifre",
+        "confirm_password_label": "Şifreyi doğrulayın",
+        "remember_me": "Beni hatırla",
+        "login_button": "Giriş Yap",
+        "signup_button": "Kayıt Ol",
+        "signup_title": "Kayıt Ol",
+        "email_error": "Geçerli bir e-posta adresi girin",
+        "password_min_error": "En az 8 karakter olmalıdır",
+        "password_max_error": "128 karakteri aşmamalıdır",
+        "passwords_dont_match": "Şifreler eşleşmiyor",
+        "required_field": "Zorunlu alan"
+    },
+    "Metadata": {
+        "home_title": "Lüks Concierge Hizmetleri | BlackCardHouse",
+        "home_description": "BlackCardHouse ile seyahat, lüks ulaşım, seçkin restoran rezervasyonları ve özel yaşam tarzı çözümlerine erişin."
+    },
+    "Dashboard": {
+        "nav": {
+            "panel": "Panel",
+            "orders": "Siparişler",
+            "users": "Kullanıcılar",
+            "sign_out": "Çıkış Yap"
+        },
+        "panel": {
+            "title": "Panel",
+            "order_count_label": "Siparişler",
+            "user_count_label": "Kullanıcılar"
+        },
+        "orders": {
+            "title": "Siparişler",
+            "table": {
+                "id": "ID",
+                "client": "Müşteri",
+                "service": "Hizmet",
+                "amount": "Tutar",
+                "status": "Durum",
+                "created_at": "Oluşturulma Tarihi",
+                "payment_status": "Ödeme durumu",
+                "experiences": "Deneyimler",
+                "updated_at": "Son güncelleme"
+            }
+        },
+        "users": {
+            "title": "Kullanıcılar",
+            "table": {
+                "name": "İsim",
+                "first_name": "Ad",
+                "last_name": "Soyad",
+                "email": "E-posta",
+                "telegram": "Telegram",
+                "service": "Hizmet",
+                "created_at": "Kayıt Tarihi",
+                "results_count": "Gösterilen {start} ile {end} / {total} sonuç"
+            }
+        },
+        "common": {
+            "loading": "Yükleniyor..."
+        }
+    },
+    "MobileMenu": {
+        "sr_open_menu": "Mobil menüyü aç/kapat",
+        "sr_menu_title": "Mobil menü",
+        "sr_menu_desc": "Mobil navigasyon"
+    },
+    "Success": {
+        "title": "Ödeme Başarılı",
+        "header": "Üyeliğiniz Onaylandı!",
+        "thanks": "BlackCardHouse'a katıldığınız için teşekkür ederiz.",
+        "email_info": "Aktif hizmetinizin detaylarını içeren bir onay e-postası gelen kutunuza gönderildi.",
+        "telegram_info": "Concierge ekibimizden biri kısa süre içinde verdiğiniz Telegram kullanıcı adı üzerinden sizinle iletişime geçecektir. Seyahat planlaması, özel rezervasyonlar ve lüks ürün temini gibi ihtiyaçlarınız için artık destek bir mesaj uzağınızda.",
+        "contact_info": "Ek sorularınız için destek ekibimize şu adresten ulaşabilirsiniz:",
+        "order_no": "Sipariş No"
+    },
+    "Fail": {
+        "title": "Ödeme Başarısız",
+        "header": "Ödeme Başarısız",
+        "error": "Ne yazık ki ödemeniz şu anda işlenemedi.",
+        "contact_info": "Sorun devam ederse destek ekibimize şu adresten ulaşın:",
+        "order_no": "Sipariş No"
+    },
+    "Chargeback": {
+        "title": "Chargeback Politikası",
+        "intro": "Bu politika, BlackCardHouse tarafından sağlanan hizmetlere ilişkin chargeback başvurularının nasıl ele alındığını açıklar.",
+        "contact_before": "Chargeback başlatmadan önce müşterilerin destek ekibimizle iletişime geçmesi gerekir. Çoğu uyuşmazlık, doğrudan iletişim yoluyla daha hızlı çözülebilir.",
+        "documentation": "Chargeback halinde BlackCardHouse; sipariş kaydı, ödeme kaydı, hizmet açıklamaları, kabul edilen politika metinleri ve ilgili iletişim kayıtları dahil olmak üzere gerekli belgeleri ödeme kuruluşuna sunabilir.",
+        "legal_rights": "İlk olarak bizimle iletişime geçmeden veya yanıltıcı gerekçelerle chargeback başlatılması durumunda yasal haklarımızı saklı tutarız.",
+        "support": "Destek için"
+    },
+    "PaymentPolicy": {
+        "title": "Ödeme Politikası",
+        "intro": "Bu politika, BlackCardHouse tarafından sunulan hizmetler için yapılan ödemelere ilişkin temel kuralları açıklar.",
+        "services_info": "BlackCardHouse şu anda {count} farklı concierge hizmet paketi sunmaktadır:",
+        "payment_info": "Tüm ücretler peşin tahsil edilir. Ödemeler Visa ve Mastercard ile yapılabilir.",
+        "currencies_title": "Desteklenen para birimleri:",
+        "confirmation_info": "Ödeme başarıyla tamamlandıktan sonra tarafınıza onay e-postası gönderilir ve ekibimiz sizinle iletişime geçer.",
+        "contact_info": "Herhangi bir sorunuz olursa bizimle şu adresten iletişime geçebilirsiniz:",
+        "per_month": "ay"
+    },
+    "Partnerships": {
+        "title": "Partnerlikler",
+        "intro": "BlackCardHouse olarak seçkin oteller, restoranlar, ulaşım sağlayıcıları, etkinlik organizatörleri ve lüks marka ortaklarıyla çalışıyoruz.",
+        "goal": "Amacımız, müşterilerimize yüksek kalite, hızlı iletişim ve güvenilir operasyon sunarken partnerlerimiz için de sürdürülebilir ve değerli iş birlikleri oluşturmaktır.",
+        "why_title": "Neden BlackCardHouse ile Çalışmalısınız?",
+        "why_items": [
+            "Seçkin ve uluslararası müşteri kitlesi",
+            "Hızlı, profesyonel ve kişiselleştirilmiş koordinasyon",
+            "Uzun vadeli ve güvene dayalı iş birliği yaklaşımı",
+            "Yüksek standartlı marka temsili"
+        ],
+        "focus_title": "İlgilendiğimiz Alanlar",
+        "focus_items": [
+            "Lüks konaklama ve villalar",
+            "Özel transfer, havacılık ve yat hizmetleri",
+            "Fine dining ve özel etkinlikler",
+            "Moda, mücevher ve sınırlı üretim lüks ürünler"
+        ],
+        "contact": "BlackCardHouse ile partnerlik fırsatlarını değerlendirmek isterseniz bizimle şu adresten iletişime geçebilirsiniz:"
+    },
+    "Validation": {
+        "required": "Zorunlu alan",
+        "invalid_email": "Geçerli bir e-posta adresi girin",
+        "invalid_phone": "Geçerli bir telefon numarası girin",
+        "too_long": "{max} karakteri aşmamalıdır",
+        "too_short": "En az {min} karakter olmalıdır",
+        "min_experience": "En az 1 deneyim seçin",
+        "select_service": "Bir hizmet seçin"
+    },
+    "OrderConfirmation": {
+        "subject": "Sipariş onayı",
+        "header": "BlackCardHouse üyelik satın alma onayı",
+        "greeting": "Sayın {name},",
+        "thanks": "Satın alımınız için teşekkür ederiz. BlackCardHouse üyeliğiniz artık aktif. İşlem detaylarınız aşağıdadır:",
+        "transaction_date": "İŞLEM TARİHİ",
+        "transaction_no": "İŞLEM NO",
+        "order_no": "SİPARİŞ NO",
+        "billed_to": "FATURA BİLGİSİ",
+        "marketplace_package": "Marketplace Paketi",
+        "service": "Hizmet",
+        "total": "TOPLAM",
+        "unauthorized_info": "Bu işlemi siz onaylamadıysanız, lütfen hemen destek ekibimizle {email} üzerinden iletişime geçin.",
+        "regards": "Saygılarımızla,",
+        "team": "BlackCardHouse ekibi"
+    }
+}

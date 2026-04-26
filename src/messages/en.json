@@ -1,0 +1,572 @@
+{
+    "PersonalDetails": {
+        "title": "Personal Information",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "dob": "Date of birth",
+        "dob_placeholder": "Select date",
+        "telegram": "Telegram",
+        "email": "E-mail",
+        "phone": "Phone",
+        "address": "Address",
+        "city": "City",
+        "postcode": "Postcode",
+        "country": "Country",
+        "select_country": "Select country",
+        "search_country": "Search country...",
+        "country_not_found": "Country not found.",
+        "experiences": "Interests",
+        "experiences_placeholder": "Search interests",
+        "notes": "Additional notes",
+        "optional": "Optional",
+        "required_field": "This field is required",
+        "invalid_email": "Please enter a valid email address",
+        "invalid_phone": "Please enter a valid phone number",
+        "min_experience": "Choose at least 1 interest"
+    },
+    "About": {
+        "title": "Your Reliable Global Concierge, Anytime, Anywhere",
+        "description": "BlackCardHouse provides 24/7 access to premium, personalized services wherever you are. Our team of dedicated assistants crafts exclusive, luxury experiences tailored to your lifestyle.",
+        "description_extra": "Enjoy priority access to world-class hotels, acclaimed restaurants, premier events, and much more.",
+        "hotels": "Global 5-star hotel partners",
+        "events": "Exclusive annual events",
+        "customers": "Satisfied clients worldwide"
+    },
+    "Hero": {
+        "title": "Elevate Your Lifestyle with Bespoke Concierge Services",
+        "description": "BlackCardHouse delivers curated experiences tailored to your every need, where every detail is managed with precision, speed, and personal attention.",
+        "button": "Get Started"
+    },
+    "CTA": {
+        "title": "Direct VIP Access via Telegram",
+        "description": "Whether you're planning a journey, booking a world-class restaurant, or seeking access to exclusive events, our concierge service provides instantaneous personal support.",
+        "button": "Order Concierge Service"
+    },
+    "Chat": {
+        "title": "Concierge Support at Your Fingertips",
+        "description": "Whenever you have a question or need assistance with your plans, our team is just a message away. Experience swift and personalized support through a simple chat.",
+        "button": "Connect Now"
+    },
+    "Nav": {
+        "experiences": "The Experiences",
+        "about": "Our Story",
+        "order_service": "Join BlackCardHouse"
+    },
+    "ContactUs": {
+        "trigger": "Contact Our Team",
+        "title": "Get in Touch",
+        "description": "Please complete the form below, and our concierge team will reach out to you shortly."
+    },
+    "ContactForm": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "subject": "Subject",
+        "message": "Your Message",
+        "submit": "Send Message",
+        "success": "Your message has been sent successfully!"
+    },
+    "Footer": {
+        "partnerships": "Join Our Partner Network",
+        "chargeback": "Chargeback and Dispute Policy",
+        "payment": "Secure Payment Policy",
+        "privacy": "Privacy and Data Protection",
+        "terms": "General Terms and Conditions",
+        "refund": "Cancellation and Refund Policy",
+        "rights": "All Rights Reserved.",
+        "registration": "Registration number",
+        "office": "Registered office address"
+    },
+    "Order": {
+        "title": "Order Concierge Service",
+        "description": "Enter your details and select your membership plan to begin your concierge journey.",
+        "submit": "Continue to Payment",
+        "personal_details": "Personal Information",
+        "per_month": "month",
+        "one_time_payment": "one-time payment"
+    },
+    "Service": {
+        "title_new": "Our Services",
+        "title_existing": "Concierge Services",
+        "description_new": "Select from our range of premium concierge memberships, designed to provide seamless access to the world's most exclusive experiences.",
+        "description_existing": "Choose the premium concierge service that best fits your current requirements.",
+        "requests_label": "Requests",
+        "days_label": "Days"
+    },
+    "Checkout": {
+        "new_client": "New Membership",
+        "existing_client": "Existing Client",
+        "currency": "Preferred Currency",
+        "currency_placeholder": "Select currency"
+    },
+    "Marketplace": {
+        "title": "Concierge Marketplace",
+        "description": "Enhance your lifestyle with our curated selection of premium services and unique experiences. From everyday essentials to extraordinary events, we handle every detail."
+    },
+    "Payment": {
+        "title": "Payment Method",
+        "card": "Pay with Card",
+        "info": "We accept all major credit cards. Your transaction is processed through a secure, encrypted gateway for your peace of mind.",
+        "currency_info": "Transactions are processed in your selected currency. Supported currencies: {currencies}. Please note that your bank may apply additional fees for currency conversion."
+    },
+    "Terms": {
+        "read_and_accept": "I have read and agree to the <link>Terms of Service</link>"
+    },
+    "Experiences": {
+        "travel": {
+            "title": "Bespoke Travel",
+            "description": "From luxury hideaways to private island escapes, our travel specialists craft seamless, curated itineraries tailored to your every whim."
+        },
+        "luxury_transportation": {
+            "title": "Elite Transportation",
+            "description": "Experience unparalleled comfort with bespoke mobility solutions, including private aviation, chauffeur services, and luxury yacht charters."
+        },
+        "fine_dining_and_nightlife": {
+            "title": "Refined Dining & Social Life",
+            "description": "Secure exclusive access to the world’s most sought-after restaurants, Michelin-starred culinary experiences, and premier social events."
+        },
+        "luxury_goods": {
+            "title": "Exclusive Acquisitions",
+            "description": "Entrust our specialists with the sourcing of rare collectibles, haute couture, and limited-edition luxury goods from around the globe."
+        }
+    },
+    "MarketplaceItems": {
+        "daily_services": "Daily Essentials",
+        "bespoke_experiences": "Curated Experiences",
+        "premium_services": "Premium Solutions",
+        "food_delivery": {
+            "title": "Gourmet Delivery",
+            "features": [
+                "Expedited delivery",
+                "White-glove service"
+            ]
+        },
+        "medicine_delivery": {
+            "title": "Wellness Logistics",
+            "features": [
+                "Prescription procurement",
+                "Discreet & urgent delivery"
+            ]
+        },
+        "errand_running": {
+            "title": "Lifestyle Management",
+            "features": [
+                "Personalized errand handling",
+                "Efficiency-focused support"
+            ]
+        },
+        "gift_shopping": {
+            "title": "Bespoke Gifting",
+            "features": [
+                "Curation of fine gifts",
+                "Worldwide presentation & delivery"
+            ]
+        },
+        "transportation_booking": {
+            "title": "Travel Coordination",
+            "features": [
+                "Instant travel arrangements",
+                "Seamless logistics management"
+            ]
+        },
+        "cleaning_services": {
+            "title": "Elite Home Care",
+            "features": [
+                "Professional domestic management",
+                "Impeccable attention to detail"
+            ]
+        },
+        "restaurant_reservations": {
+            "title": "Table Procurement",
+            "features": [
+                "Priority bookings at global hotspots",
+                "Seamless reservation management"
+            ]
+        },
+        "travel_arrangements": {
+            "title": "Itinerary Planning",
+            "features": [
+                "Comprehensive flight & stay booking",
+                "Expertly crafted travel routes"
+            ]
+        },
+        "event_tickets": {
+            "title": "Priority Access Tickets",
+            "features": [
+                "Entry to sold-out global events",
+                "VIP & backstage experiences"
+            ]
+        },
+        "stays_and_accommodations": {
+            "title": "Luxury Stays",
+            "features": [
+                "Preferential hotel placements",
+                "Highly personalized stay experiences"
+            ]
+        },
+        "car_rentals": {
+            "title": "Premium Fleet Access",
+            "features": [
+                "Selection of top-tier marques",
+                "Seamless delivery & collection"
+            ]
+        },
+        "private_chef_services": {
+            "title": "Gastronomic Experiences",
+            "features": [
+                "In-residence fine dining",
+                "Custom-tailored menus",
+                "Professional culinary staff"
+            ]
+        },
+        "premium_travel_package": {
+            "title": "Signature Travel Collection",
+            "features": [
+                "Personalized end-to-end itineraries",
+                "Elite accommodation & transport",
+                "Access to hidden local gems"
+            ]
+        },
+        "luxury_suite_booking": {
+            "title": "Elite Suite Access",
+            "features": [
+                "Guaranteed placement in global suites",
+                "Bespoke VIP amenities",
+                "Dedicated local concierge"
+            ]
+        },
+        "event_organisation": {
+            "title": "Event Production",
+            "features": [
+                "Full-scale event coordination",
+                "Strategic vendor management",
+                "On-site executive oversight"
+            ]
+        },
+        "personal_shopper": {
+            "title": "Personal Style Consultant",
+            "features": [
+                "Bespoke shopping journeys",
+                "Early access to new collections",
+                "Expert image & style advice"
+            ]
+        },
+        "private_jet_charter": {
+            "title": "Private Aviation",
+            "features": [
+                "Global fleet flexibility",
+                "Expedited VIP terminal access",
+                "Bespoke in-flight catering"
+            ]
+        },
+        "yacht_charter": {
+            "title": "Nautical Expeditions",
+            "features": [
+                "Tailored maritime experiences",
+                "Highly trained professional crew",
+                "Curated oceanic routes"
+            ]
+        }
+    },
+    "Services": {
+        "signature_30": {
+            "title": "Signature 30",
+            "features": [
+                "Up to 30 requests monthly",
+                "24/7 dedicated access",
+                "Comprehensive travel planning",
+                "Essential lifestyle management"
+            ]
+        },
+        "signature_75": {
+            "title": "Signature 75",
+            "features": [
+                "Up to 75 requests monthly",
+                "24/7 dedicated access",
+                "Advanced travel & itinerary support",
+                "Full-spectrum lifestyle management"
+            ]
+        },
+        "signature_100": {
+            "title": "Signature 100",
+            "features": [
+                "Up to 100 requests monthly",
+                "Priority response times",
+                "24/7 elite concierge access",
+                "Global stay & travel coordination",
+                "Strategic lifestyle & experience planning"
+            ]
+        },
+        "premier": {
+            "title": "Premier Elite",
+            "features": [
+                "Guaranteed restaurant & event access",
+                "VIP entry to global venues",
+                "Advanced travel & personal logistics",
+                "Around-the-clock dedicated support"
+            ]
+        },
+        "jet_setter": {
+            "title": "Jet Setter",
+            "features": [
+                "Bespoke aviation & luxury hotel concierge",
+                "VIP airport lounge & terminal access",
+                "Preferred rates at 100+ global 5-star properties",
+                "Advanced personal logistics",
+                "24/7 dedicated support"
+            ]
+        },
+        "executive_elite": {
+            "title": "Executive Elite",
+            "features": [
+                "Ultra-priority executive access",
+                "Comprehensive corporate & personal management",
+                "Professional event & business travel support",
+                "Sourcing of rare luxury acquisitions",
+                "24/7 dedicated support"
+            ]
+        },
+        "daily_access": {
+            "title": "Ad-Hoc Daily Access",
+            "features": [
+                "Full concierge access for chosen dates",
+                "Perfect for vacations or intense periods",
+                "Access to all services during active days",
+                "No long-term commitment"
+            ]
+        },
+        "request_access": {
+            "title": "Request-Based Access",
+            "features": [
+                "Pay-per-request flexibility",
+                "Access to full concierge network",
+                "Ideal for occasional or niche needs",
+                "No long-term commitment"
+            ]
+        }
+    },
+    "RefundPolicy": {
+        "title": "Refund & Cancellation Policy",
+        "description": "This policy outlines the principles for refunds and cancellations regarding services acquired through BlackCardHouse.",
+        "membership_info": "Concierge memberships and access packages are generally non-refundable once activated. Unused access during the service period does not entitle the client to restitution or credit.",
+        "third_party_info": "Specific bookings, events, or third-party services may be subject to additional cancellation terms. In such instances, the terms of the respective provider shall apply.",
+        "operational_info": "Should BlackCardHouse be unable to fulfill a service due to internal operational reasons, a full or partial refund or credit may be issued at our discretion.",
+        "contact_info": "For refund inquiries, please contact us at:"
+    },
+    "PrivacyPolicy": {
+        "title": "Privacy Policy",
+        "description": "This policy explains how BlackCardHouse collects, utilizes, and safeguards your personal data.",
+        "data_info": "Information we may collect includes your full name, email address, telephone number, Telegram username, billing and delivery details, and any other information you provide to us.",
+        "how_we_use_title": "How We Use Your Data",
+        "how_we_use_items": [
+            "To provide services and manage your requests",
+            "To process payments and orders",
+            "To communicate with you",
+            "To comply with legal obligations"
+        ],
+        "payment_title": "Payment Information",
+        "payment_info": "BlackCardHouse does not store or process credit card information; payments are handled via authorized third-party payment providers.",
+        "sharing_title": "Data Sharing",
+        "sharing_info": "To the extent necessary for service delivery, your data may be shared with third-party hotels, transport companies, event organizers, or payment partners.",
+        "rights_title": "Your Rights",
+        "rights_info": "Subject to applicable laws, you may request access to, correction of, or deletion of your data.",
+        "contact_title": "Contact",
+        "contact_info": "For privacy-related questions:"
+    },
+    "TermsOfService": {
+        "title": "Terms of Service",
+        "date_label": "Effective Date",
+        "date_value": "14/12/2025",
+        "intro": "BlackCardHouse is a premium lifestyle management and concierge service operated by The Illustrious Company Limited, registered in the United Kingdom. These terms govern your access to our website, services, and communication channels, including Telegram.",
+        "agreement": "By utilizing our services, you acknowledge that you have read, understood, and agreed to these terms.",
+        "sections": [
+            {
+                "title": "1. Scope of Service",
+                "content": "BlackCardHouse provides travel planning, luxury transportation, bespoke reservations, event access, personal shopping, and on-demand concierge support. All services are subject to availability, local regulations, and the conditions of third-party providers."
+            },
+            {
+                "title": "2. Packages & Payment",
+                "content": "All fees are payable in advance. Memberships do not renew automatically unless explicitly stated otherwise."
+            },
+            {
+                "title": "3. Eligibility",
+                "content": "To utilize our services, you must be at least 18 years of age and possess the legal capacity to enter into binding contracts."
+            },
+            {
+                "title": "4. Client Obligations",
+                "items": [
+                    "Provide accurate and up-to-date contact information",
+                    "Respond promptly to requests for confirmation or additional information",
+                    "Review bookings and arrangements prior to final confirmation"
+                ]
+            },
+            {
+                "title": "5. Third-Party Providers",
+                "content": "Many concierge services are fulfilled through independent third-party providers. BlackCardHouse acts as an intermediary for these services."
+            },
+            {
+                "title": "6. Acceptable Use",
+                "content": "Services may only be used for lawful and ethical purposes. Illegal, abusive, or inappropriate requests may be declined."
+            },
+            {
+                "title": "7. Liability",
+                "content": "To the fullest extent permitted by law, BlackCardHouse is not liable for indirect or consequential damages."
+            },
+            {
+                "title": "8. Intellectual Property",
+                "content": "Content within our website and services belongs to BlackCardHouse or respective right holders."
+            },
+            {
+                "title": "9. Contact",
+                "content": "For questions regarding these terms:"
+            }
+        ]
+    },
+    "Auth": {
+        "login_title": "Login",
+        "email_label": "Email",
+        "password_label": "Password",
+        "confirm_password_label": "Confirm Password",
+        "remember_me": "Remember me",
+        "login_button": "Login",
+        "signup_button": "Sign Up",
+        "signup_title": "Sign Up",
+        "email_error": "Please enter a valid email address",
+        "password_min_error": "Must be at least 8 characters",
+        "password_max_error": "Must not exceed 128 characters",
+        "passwords_dont_match": "Passwords do not match",
+        "required_field": "This field is required"
+    },
+    "Metadata": {
+        "home_title": "Luxury Concierge Services | BlackCardHouse",
+        "home_description": "Access travel, luxury transportation, exclusive restaurant reservations, and bespoke lifestyle solutions with BlackCardHouse."
+    },
+    "Dashboard": {
+        "nav": {
+            "panel": "Dashboard",
+            "orders": "Orders",
+            "users": "Users",
+            "sign_out": "Sign Out"
+        },
+        "panel": {
+            "title": "Dashboard",
+            "order_count_label": "Total Orders",
+            "user_count_label": "Total Users"
+        },
+        "orders": {
+            "title": "Orders",
+            "table": {
+                "id": "ID",
+                "client": "Client",
+                "service": "Service",
+                "amount": "Amount",
+                "status": "Status",
+                "created_at": "Order Date",
+                "payment_status": "Payment Status",
+                "experiences": "Experiences",
+                "updated_at": "Last Updated"
+            }
+        },
+        "users": {
+            "title": "Users",
+            "table": {
+                "name": "Name",
+                "first_name": "First Name",
+                "last_name": "Last Name",
+                "email": "Email",
+                "telegram": "Telegram",
+                "service": "Service",
+                "created_at": "Joined Date",
+                "results_count": "Showing {start} to {end} of {total} results"
+            }
+        },
+        "common": {
+            "loading": "Loading..."
+        }
+    },
+    "MobileMenu": {
+        "sr_open_menu": "Open/close mobile menu",
+        "sr_menu_title": "Mobile menu",
+        "sr_menu_desc": "Mobile navigation"
+    },
+    "Success": {
+        "title": "Payment Successful",
+        "header": "Membership Confirmed!",
+        "thanks": "Thank you for joining BlackCardHouse.",
+        "email_info": "A confirmation email with your active service details has been sent to your inbox.",
+        "telegram_info": "One of our concierge specialists will contact you via your provided Telegram username shortly. Whether it's travel planning, exclusive reservations, or luxury procurement, support is now just a message away.",
+        "contact_info": "For additional inquiries, reach our support team at:",
+        "order_no": "Order No"
+    },
+    "Fail": {
+        "title": "Payment Failed",
+        "header": "Payment Failed",
+        "error": "Regrettably, your payment could not be processed at this time.",
+        "contact_info": "If the problem persists, please contact our support team at:",
+        "order_no": "Order No"
+    },
+    "Chargeback": {
+        "title": "Chargeback Policy",
+        "intro": "This policy outlines how chargeback requests related to services provided by BlackCardHouse are handled.",
+        "contact_before": "Clients are required to contact our support team before initiating a chargeback. Most disputes can be resolved more swiftly through direct communication.",
+        "documentation": "In the event of a chargeback, BlackCardHouse may submit necessary documentation to the payment institution, including order records, payment logs, service descriptions, accepted policies, and relevant communication records.",
+        "legal_rights": "We reserve our legal rights in cases where a chargeback is initiated without prior contact or based on misleading grounds.",
+        "support": "For support"
+    },
+    "PaymentPolicy": {
+        "title": "Payment Policy",
+        "intro": "This policy explains the core rules regarding payments for services offered by BlackCardHouse.",
+        "services_info": "BlackCardHouse currently offers {count} different concierge service packages:",
+        "payment_info": "All fees are collected in advance. Payments can be made with Visa and Mastercard.",
+        "currencies_title": "Supported currencies:",
+        "confirmation_info": "Once the payment is successfully completed, a confirmation email will be sent to you and our team will get in touch.",
+        "contact_info": "If you have any questions, you can contact us at:",
+        "per_month": "month"
+    },
+    "Partnerships": {
+        "title": "Partnerships",
+        "intro": "At BlackCardHouse, we collaborate with elite hotels, restaurants, transportation providers, event organizers, and luxury brand partners.",
+        "goal": "Our goal is to offer high quality, swift communication, and reliable operations to our clients while creating sustainable and valuable collaborations for our partners.",
+        "why_title": "Why Partner with BlackCardHouse?",
+        "why_items": [
+            "Exclusive and international clientele",
+            "Swift, professional, and personalized coordination",
+            "Long-term and trust-based approach to collaboration",
+            "High-standard brand representation"
+        ],
+        "focus_title": "Areas of Interest",
+        "focus_items": [
+            "Luxury accommodations and villas",
+            "Private transfer, aviation, and yacht services",
+            "Fine dining and exclusive events",
+            "Fashion, jewelry, and limited-edition luxury goods"
+        ],
+        "contact": "If you would like to explore partnership opportunities with BlackCardHouse, please contact us at:"
+    },
+    "Validation": {
+        "required": "Required field",
+        "invalid_email": "Please enter a valid email address",
+        "invalid_phone": "Please enter a valid phone number",
+        "too_long": "Must not exceed {max} characters",
+        "too_short": "Must be at least {min} characters",
+        "min_experience": "Choose at least 1 interest",
+        "select_service": "Select a service"
+    },
+    "OrderConfirmation": {
+        "subject": "Order Confirmation",
+        "header": "BlackCardHouse Membership Confirmation",
+        "greeting": "Dear {name},",
+        "thanks": "Thank you for your purchase. Your BlackCardHouse membership is now active. Your transaction details are below:",
+        "transaction_date": "TRANSACTION DATE",
+        "transaction_no": "TRANSACTION NO",
+        "order_no": "ORDER NO",
+        "billed_to": "BILLED TO",
+        "marketplace_package": "Marketplace Package",
+        "service": "Service",
+        "total": "TOTAL",
+        "unauthorized_info": "If you did not authorize this transaction, please contact our support team immediately at {email}.",
+        "regards": "Regards,",
+        "team": "The BlackCardHouse Team"
+    }
+}

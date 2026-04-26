@@ -18,55 +18,60 @@ export const CLIENT_TYPES = {
   EXISTING: "existing",
 } as const;
 
-export const contactFormSchema = z.object({
-  email: z.string().email({ message: "Geçerli bir e-posta adresi girin" }),
-  firstName: z
-    .string()
-    .trim()
-    .max(50, "50 karakteri aşmamalıdır")
-    .min(1, "Zorunlu alan"),
-  lastName: z
-    .string()
-    .trim()
-    .max(50, "50 karakteri aşmamalıdır")
-    .min(1, "Zorunlu alan"),
-  message: z.string().trim().min(1, "Zorunlu alan"),
-  phone: z.string().trim().min(6, "Geçerli bir telefon numarası girin"),
-  subject: z
-    .string()
-    .trim()
-    .max(50, "50 karakteri aşmamalıdır")
-    .min(1, "Zorunlu alan"),
-});
+export const getContactFormSchema = (t: (key: string, params?: any) => string) =>
+  z.object({
+    email: z.string().email({ message: t("invalid_email") }),
+    firstName: z
+      .string()
+      .trim()
+      .max(50, t("too_long", { max: 50 }))
+      .min(1, t("required")),
+    lastName: z
+      .string()
+      .trim()
+      .max(50, t("too_long", { max: 50 }))
+      .min(1, t("required")),
+    message: z.string().trim().min(1, t("required")),
+    phone: z.string().trim().min(6, t("invalid_phone")),
+    subject: z
+      .string()
+      .trim()
+      .max(50, t("too_long", { max: 50 }))
+      .min(1, t("required")),
+  });
 
-export const checkoutFormSchema = z.object({
-  // amount: z.number().nullable(),
-  city: z.string().trim().max(85).min(1, "Zorunlu alan"),
-  clientType: z.nativeEnum(CLIENT_TYPES),
-  country: z.string().trim().max(56).min(1, "Zorunlu alan"),
-  currency: z.string(),
-  dateOfBirth: z.coerce.date(),
-  email: z.string().email({ message: "Geçerli bir e-posta adresi girin" }),
-  experiences: z
-    .string()
-    .array()
-    .nonempty({ message: "En az 1 deneyim seçin" }),
-  firstName: z.string().trim().max(50).min(1, "Zorunlu alan"),
-  isTermsChecked: z.boolean(),
-  lastName: z.string().trim().max(50).min(1, "Zorunlu alan"),
-  marketplacePackages: z.array(z.enum(marketplacePackageIdsMap)),
-  notes: z.string().trim(),
-  phone: z
-    .string()
-    .trim()
-    .min(6, "Geçerli bir telefon numarası girin")
-    .min(1, "Zorunlu alan"),
-  postcode: z.string().trim().max(20).min(1, "Zorunlu alan"),
-  service: z.enum(serviceMap, { required_error: "Bir hizmet seçin" }),
-  serviceAmount: z.number(),
-  street: z.string().trim().max(100).min(1, "Zorunlu alan"),
-  telegram: z.string().trim().max(32).min(1, "Zorunlu alan"),
-});
+export const getCheckoutFormSchema = (t: (key: string, params?: any) => string) =>
+  z.object({
+    // amount: z.number().nullable(),
+    city: z.string().trim().max(85).min(1, t("required")),
+    clientType: z.nativeEnum(CLIENT_TYPES),
+    country: z.string().trim().max(56).min(1, t("required")),
+    currency: z.string(),
+    dateOfBirth: z.coerce.date(),
+    email: z.string().email({ message: t("invalid_email") }),
+    experiences: z
+      .string()
+      .array()
+      .nonempty({ message: t("min_experience") }),
+    firstName: z.string().trim().max(50).min(1, t("required")),
+    isTermsChecked: z.boolean(),
+    lastName: z.string().trim().max(50).min(1, t("required")),
+    locale: z.string().optional(),
+    marketplacePackages: z.array(z.enum(marketplacePackageIdsMap)),
+    notes: z.string().trim(),
+    phone: z
+      .string()
+      .trim()
+      .min(6, t("invalid_phone")),
+    postcode: z.string().trim().max(20).min(1, t("required")),
+    service: z.enum(serviceMap, { required_error: t("select_service") }),
+    serviceAmount: z.number(),
+    street: z.string().trim().max(100).min(1, t("required")),
+    telegram: z.string().trim().max(32).min(1, t("required")),
+  });
+
+export const contactFormSchema = getContactFormSchema((k) => k);
+export const checkoutFormSchema = getCheckoutFormSchema((k) => k);
 
 export const checkoutFormDefaultValues = {
   city: "",
@@ -154,11 +159,11 @@ export type TransactionCallbackResponse = {
     from_first_name: string;
     from_last_name: string;
     payment_group:
-      | "bank_account"
-      | "bank_card"
-      | "cash_collection"
-      | "crypto"
-      | "ewallet";
+    | "bank_account"
+    | "bank_card"
+    | "cash_collection"
+    | "crypto"
+    | "ewallet";
     payment_method: string;
   };
   md5_body_sig: string; // To validate: md5(transaction_id+sep31_status+refunded+secret_key)

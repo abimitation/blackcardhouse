@@ -85,6 +85,7 @@ export async function POST(request: NextRequest) {
           .replace("T", " ")
           .substring(0, 19),
         transactionId: order.paymentId!,
+        locale: order.locale as "tr" | "en",
       }).catch(() => console.log("Failed to send order confirmation email")),
     ]);
   }

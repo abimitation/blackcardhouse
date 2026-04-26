@@ -6,12 +6,15 @@ import Link from "next/link";
 import ContactUs from "./ContactUs";
 import { Button } from "./ui/Button";
 
-const navigation = [
-  { label: "Deneyimler", href: "/#experiences" },
-  { label: "Hakkımızda", href: "/#about-us" },
-];
+import { useTranslations } from "next-intl";
 
 export default function Nav({ className }: { className?: string }) {
+  const t = useTranslations("Nav");
+  const navigation = [
+    { label: t("experiences"), href: "/#experiences" },
+    { label: t("about"), href: "/#about-us" },
+  ];
+
   return (
     <nav className={cn("flex items-center gap-x-10", className)}>
       {navigation.map((navItem) => (
@@ -23,7 +26,7 @@ export default function Nav({ className }: { className?: string }) {
       <Button asChild>
         <Link className="inline-flex items-center gap-x-1 font-light" href="/order-concierge-service">
           <UserRoundIcon className="size-5" />
-          Concierge Hizmeti Sipariş Et
+          {t("order_service")}
         </Link>
       </Button>
     </nav>
