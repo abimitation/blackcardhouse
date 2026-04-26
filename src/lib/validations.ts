@@ -18,7 +18,7 @@ export const CLIENT_TYPES = {
   EXISTING: "existing",
 } as const;
 
-export const getContactFormSchema = (t: (key: string, params?: any) => string) =>
+export const getContactFormSchema = (t: (key: string, params?: Record<string, unknown>) => string) =>
   z.object({
     email: z.string().email({ message: t("invalid_email") }),
     firstName: z
@@ -40,7 +40,7 @@ export const getContactFormSchema = (t: (key: string, params?: any) => string) =
       .min(1, t("required")),
   });
 
-export const getCheckoutFormSchema = (t: (key: string, params?: any) => string) =>
+export const getCheckoutFormSchema = (t: (key: string, params?: Record<string, unknown>) => string) =>
   z.object({
     // amount: z.number().nullable(),
     city: z.string().trim().max(85).min(1, t("required")),

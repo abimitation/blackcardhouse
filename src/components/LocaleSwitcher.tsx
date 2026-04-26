@@ -12,9 +12,6 @@ export default function LocaleSwitcher() {
 
     const onSelectChange = (nextLocale: string) => {
         startTransition(() => {
-            // Replace the current locale in the pathname
-            const newPathname = pathname.replace(`/${locale}`, `/${nextLocale}`);
-            // If it doesn't start with the locale (at the root), we may need to prepend it or handle it differently
             // Since localePrefix is 'as-needed', we should be careful.
 
             // Simpler approach for as-needed:

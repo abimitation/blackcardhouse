@@ -6,7 +6,6 @@ import { redirect } from "next/navigation";
 import OrderCount from "./_components/OrderCount";
 import UserCount from "./_components/UserCount";
 
-import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata({

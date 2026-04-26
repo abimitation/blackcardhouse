@@ -43,7 +43,34 @@ export const orderConfirmationMailTemplate = ({
 }: OrderConfirmationMailTemplateProps) => {
   const selectedService = services.find((s) => s.id === service) ?? null;
   const allMarketplacePackages = Object.values(MARKETPLACE_PACKAGES).flat();
-  const messages = (locale === "tr" ? tr : en) as any;
+  interface Messages {
+    OrderConfirmation: {
+      subject: string;
+      header: string;
+      greeting: string;
+      thanks: string;
+      transaction_date: string;
+      transaction_no: string;
+      order_no: string;
+      billed_to: string;
+      marketplace_package: string;
+      service: string;
+      total: string;
+      unauthorized_info: string;
+      regards: string;
+      team: string;
+    };
+    Footer: {
+      payment: string;
+      privacy: string;
+      terms: string;
+      refund: string;
+    };
+    Services: Record<string, { title: string }>;
+    MarketplaceItems: Record<string, { title: string }>;
+  }
+
+  const messages = (locale === "tr" ? tr : en) as unknown as Messages;
   const t = messages.OrderConfirmation;
 
   return `

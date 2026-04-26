@@ -20,6 +20,12 @@ export async function generateMetadata({
   };
 }
 
+interface TermsSection {
+  title: string;
+  content?: string;
+  items?: string[];
+}
+
 export default function TermsOfServicePage() {
   const t = useTranslations("TermsOfService");
   const tServices = useTranslations("Services");
@@ -36,7 +42,7 @@ export default function TermsOfServicePage() {
           <p>{t("intro")}</p>
           <p>{t("agreement")}</p>
 
-          {(t.raw("sections") as any[]).map((section, index) => (
+          {(t.raw("sections") as TermsSection[]).map((section, index) => (
             <div key={index}>
               <h2>{section.title}</h2>
               {section.content && <p>{section.content}</p>}
