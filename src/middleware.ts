@@ -6,7 +6,8 @@ export default createMiddleware({
 
     // Used when no locale matches
     defaultLocale: 'tr',
-    localePrefix: 'as-needed' // Or 'always' if you want /tr/...
+    localePrefix: 'as-needed', // Or 'always' if you want /tr/...
+    localeDetection: false
 });
 
 export const config = {
