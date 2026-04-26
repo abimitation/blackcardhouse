@@ -12,12 +12,6 @@ import { CheckIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useFormContext, useWatch } from "react-hook-form";
 
-const serviceMeta: Partial<
-  Record<ServiceId, { label: string; initialValue?: number; max?: number }>
-> = {
-  request_access: { label: "Talepler" },
-  daily_access: { label: "Gün", max: 30 },
-};
 
 function calculateCost({
   initialCost,

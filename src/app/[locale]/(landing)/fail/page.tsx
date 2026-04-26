@@ -60,19 +60,19 @@ export default async function FailPage({
       <div className="px-6 py-10">
         <section className="mx-auto prose dark:prose-invert">
           <BadgeXIcon className="mx-auto mb-5 size-15 text-red-600" />
-          <h1 className="text-center text-red-600">Ödeme Başarısız</h1>
+          <h1 className="text-center text-red-600">{t("header")}</h1>
           <p className="text-center">
-            Ne yazık ki ödemeniz şu anda işlenemedi.
+            {t("error")}
             <br />
             <br />
-            Sorun devam ederse destek ekibimize şu adresten ulaşın:
+            {t("contact_info")}
             <a className="text-primary" href="mailto:info@blackcardhouse.com">
               info@blackcardhouse.com
             </a>
             .
             <br />
             <br />
-            Sipariş No: <span className="text-primary">{orderId}</span>
+            {t("order_no")}: <span className="text-primary">{orderId}</span>
           </p>
         </section>
       </div>
