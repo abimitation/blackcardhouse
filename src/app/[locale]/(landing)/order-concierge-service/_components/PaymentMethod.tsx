@@ -2,7 +2,6 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/RadioGroup";
 import { Separator } from "@/components/ui/Separator";
 import { currencyKeys } from "@/config/currencies";
 import { CreditCardIcon } from "lucide-react";
-import { Fragment } from "react";
 
 import { useTranslations } from "next-intl";
 

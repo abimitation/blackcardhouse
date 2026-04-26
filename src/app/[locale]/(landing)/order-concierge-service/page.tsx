@@ -1,6 +1,5 @@
 import Footer from "@/components/Footer";
 import Logo from "@/components/Logo";
-import { Metadata } from "next";
 import CheckoutForm from "./_components/CheckoutForm";
 
 import { getTranslations } from "next-intl/server";

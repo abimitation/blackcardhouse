@@ -42,7 +42,6 @@ export default function CheckoutForm() {
     resolver: zodResolver(schema),
     defaultValues: {
       ...checkoutFormDefaultValues,
-      // @ts-ignore
       locale: locale as string,
     },
   });
@@ -53,11 +52,11 @@ export default function CheckoutForm() {
     name: "isTermsChecked",
   });
 
-  const onError: SubmitErrorHandler<any> = (errors) => {
+  const onError: SubmitErrorHandler<FormValues> = (errors) => {
     console.log("[onError]", errors);
   };
 
-  const onSubmit: SubmitHandler<any> = (values) => {
+  const onSubmit: SubmitHandler<FormValues> = (values) => {
     console.log("[onSubmit]", values);
     checkout.mutate(values, {
       onError: (error) => {
@@ -89,7 +88,7 @@ export default function CheckoutForm() {
           type="submit"
         >
           <LockIcon className="size-5" />
-          {useTranslations("Order")("submit")}
+          {t("submit")}
         </Button>
       </form>
 

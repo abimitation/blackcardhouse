@@ -9,7 +9,6 @@ import { PAYMENT_STATUSES } from "@/lib/validations";
 import { and, eq } from "drizzle-orm";
 import { redirect } from "next/navigation";
 
-import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata({
