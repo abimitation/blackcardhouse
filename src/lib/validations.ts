@@ -71,6 +71,7 @@ export const getCheckoutFormSchema = (t: (key: string, params?: any) => string) 
   });
 
 export const contactFormSchema = getContactFormSchema((k) => k);
+export type ContactFormValues = z.infer<typeof contactFormSchema>;
 export const checkoutFormSchema = getCheckoutFormSchema((k) => k);
 
 export const checkoutFormDefaultValues = {

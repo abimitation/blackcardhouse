@@ -13,7 +13,7 @@ import { useInView } from "react-intersection-observer";
 
 import { useTranslations } from "next-intl";
 
-const ExperienceCard = ({ description, img, title, slug }: Experience) => {
+const ExperienceCard = ({ img, slug }: Experience) => {
   const t = useTranslations("Experiences");
   return (
     <div className="flex h-full flex-col" id="experiences">
@@ -62,10 +62,10 @@ export default function Experiences() {
             style={{ transitionDelay: `${i * 200}ms` }}
           >
             <ExperienceCard
-              title={experience.title}
-              description={experience.description}
               slug={experience.slug}
               img={experience.img}
+              description={""}
+              title={""}
             />
           </CarouselItem>
         ))}

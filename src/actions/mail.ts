@@ -8,9 +8,9 @@ import {
   orderConfirmationMailTemplate,
   OrderConfirmationMailTemplateProps,
 } from "@/lib/mail/templates/orderConfirmation";
-import { z } from "zod";
+import { ContactFormValues } from "@/lib/validations";
 
-export async function sendContactForm(data: any) {
+export async function sendContactForm(data: ContactFormValues) {
   try {
     await mailClient.sendMail({
       from: `"BlackCardHouse" <${process.env.MAIL_USERNAME}>`,
@@ -30,13 +30,17 @@ export async function sendContactForm(data: any) {
   }
 }
 
+interface Messages {
+  OrderConfirmation: {
+    subject: string;
+  };
+}
+
 export async function sendOrderConfirmationMail(
   data: OrderConfirmationMailTemplateProps,
 ) {
   try {
-    const messagesTr = tr as any;
-    const messagesEn = en as any;
-    const messages = data.locale === "tr" ? messagesTr : messagesEn;
+    const messages = (data.locale === "tr" ? tr : en) as unknown as Messages;
 
     await Promise.all([
       await mailClient.sendMail({
