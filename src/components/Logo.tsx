@@ -1,6 +1,6 @@
 import logoImg from "@public/img/logo-plain.png";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 
 export default function Logo() {
   return (

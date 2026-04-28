@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { useInView } from "react-intersection-observer";
 
 import { useTranslations } from "next-intl";

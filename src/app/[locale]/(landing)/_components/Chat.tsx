@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import messagesImg from "@public/img/messages.webp";
 import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { useInView } from "react-intersection-observer";
 
 import { useTranslations } from "next-intl";

@@ -1,7 +1,7 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter } from "@/i18n/routing";
 import { useTransition } from "react";
 
 export default function LocaleSwitcher() {
@@ -10,19 +10,9 @@ export default function LocaleSwitcher() {
     const pathname = usePathname();
     const [isPending, startTransition] = useTransition();
 
-    const onSelectChange = (nextLocale: string) => {
+    const onSelectChange = (nextLocale: "en" | "tr") => {
         startTransition(() => {
-            // Since localePrefix is 'as-needed', we should be careful.
-
-            // Simpler approach for as-needed:
-            let targetPath = pathname;
-            if (pathname.startsWith(`/${locale}`)) {
-                targetPath = pathname.replace(`/${locale}`, `/${nextLocale}`);
-            } else {
-                targetPath = `/${nextLocale}${pathname}`;
-            }
-
-            router.replace(targetPath);
+            router.replace(pathname, { locale: nextLocale });
         });
     };
 

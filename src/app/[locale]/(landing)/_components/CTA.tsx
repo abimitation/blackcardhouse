@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import appScreen1Img from "@public/img/app-screen-1.webp";
 import appScreen2Img from "@public/img/app-screen-2.webp";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { useInView } from "react-intersection-observer";
 
 import { useTranslations } from "next-intl";
