@@ -22,8 +22,8 @@ export default function Footer() {
                 <div className="flex items-center gap-x-2"><PhoneIcon className="size-4 text-primary" /><a href="tel:+447727947193" className="text-sm leading-6 font-light text-primary underline-offset-2 hover:underline">+44 7727 947193</a></div>
                 <div className="flex items-center gap-x-2"><MailIcon className="size-4 text-primary" /><a href="mailto:info@blackcardhouse.com" className="text-sm leading-6 font-light text-primary underline-offset-2 hover:underline">info@blackcardhouse.com</a></div>
                 <div className="mt-2 flex items-center gap-x-3">
-                  <a href="https://www.instagram.com/abconcierge.uk?igsh=MXJ6cTY3MTRuMDdjcw%3D%3D&utm_source=qr" target="_blank" rel="noreferrer"><InstagramIcon className="size-5 text-primary hover:text-primary/90" /><span className="sr-only">Instagram</span></a>
-                  <a href="https://www.linkedin.com/company/abconciergeofficial" target="_blank" rel="noreferrer"><LinkedInIcon className="-mt-px size-5 text-primary hover:text-primary/90" /><span className="sr-only">LinkedIn</span></a>
+                  <a href="https://www.instagram.com/blackcardhouse/" target="_blank" rel="noreferrer"><InstagramIcon className="size-5 text-primary hover:text-primary/90" /><span className="sr-only">Instagram</span></a>
+                  <a href="https://www.linkedin.com/company/blackcardhouse/" target="_blank" rel="noreferrer"><LinkedInIcon className="-mt-px size-5 text-primary hover:text-primary/90" /><span className="sr-only">LinkedIn</span></a>
                 </div>
               </div>
               <div className="flex flex-col">
